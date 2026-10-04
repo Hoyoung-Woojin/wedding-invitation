@@ -7,7 +7,7 @@ const WEDDING_ACCOUNTS = [
   {role:'어머니',name:'정진춘',bank:'산업은행',number:'020-0255-1745-310'}
  ]},
  {side:'신부측',people:[
-  {role:'신부',name:'차우진',bank:'신한',number:'110-207-680429'},
+  {role:'신부',name:'차우진',bank:'신한은행',number:'110-207-680429'},
   {role:'아버지',name:'차도현',bank:'기업은행',number:'027-107188-02-013'},
   {role:'어머니',name:'강순천',bank:'기업은행',number:'027-112268-01-011'}
  ]}
