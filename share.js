@@ -1,0 +1,5 @@
+const INVITATION_SHARE={title:'호영과 우진, 결혼합니다',text:'2026년 12월 12일 토요일 오후 12시 · 그랜드 머큐어 임피리얼 팰리스 호텔 7층 셀레나홀',url:'https://hoyoung-woozin.github.io/wedding-invitation/'};
+const shareStatus=document.querySelector('#share-status'),shareManual=document.querySelector('#share-manual'),shareText=document.querySelector('#share-copy-text');
+async function copyInvitation(){shareManual.hidden=true;try{if(!navigator.clipboard?.writeText)throw Error();await navigator.clipboard.writeText(INVITATION_SHARE.url);shareStatus.textContent='청첩장 링크를 복사했습니다.'}catch{shareText.value=INVITATION_SHARE.url;shareManual.hidden=false;shareText.focus();shareText.select();shareStatus.textContent='아래 주소를 직접 복사해 주세요.'}}
+document.querySelector('#copy-invitation').onclick=copyInvitation;
+document.querySelector('#share-invitation').onclick=async()=>{shareManual.hidden=true;shareStatus.textContent='';if(!navigator.share){await copyInvitation();return}try{await navigator.share(INVITATION_SHARE)}catch(e){if(e.name==='AbortError')return;shareStatus.textContent='공유 메뉴를 열지 못했습니다. 링크 복사하기를 이용해 주세요.'}};
