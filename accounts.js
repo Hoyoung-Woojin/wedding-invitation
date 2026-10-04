@@ -2,13 +2,11 @@
 // bank에 은행명을 넣으면 화면과 복사 내용에 자동 반영됩니다.
 const WEDDING_ACCOUNTS = [
  {side:'신랑측',people:[
-  
   {role:'아버지',name:'유구현',bank:'기업은행',number:'305-032671-01-010'},
   {role:'어머니',name:'정진춘',bank:'산업은행',number:'020-0255-1745-310'},
   {role:'신랑',name:'유호영',bank:'산업은행',number:'020-9200-2108-316'}
  ]},
  {side:'신부측',people:[
-  
   {role:'아버지',name:'차도현',bank:'기업은행',number:'027-107188-02-013'},
   {role:'어머니',name:'강순천',bank:'기업은행',number:'027-112268-01-011'},
   {role:'신부',name:'차우진',bank:'신한은행',number:'110-207-680429'}
