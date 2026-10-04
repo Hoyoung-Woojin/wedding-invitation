@@ -1,12 +1,15 @@
+/* 한글: 네이버 마루부리. 영문 장식 제목은 각 영역 지정 글꼴 사용. */
+body{font-family:'MaruBuri',serif}
+button,input,select,textarea{font-family:inherit}
 /* 기획안 1차 디자인. 커버 값은 480px 카드 기준이며 카드 폭에 비례합니다. */
 main{container-type:inline-size;overflow:hidden}
 .cover{padding:0 0 17.5cqw;background:#e8d3d1}
-.cover .credits{padding:1.6cqw 6.2cqw 0;margin:0 0 5.5cqw;font-size:2.9cqw;line-height:1.3;font-weight:500;gap:10px}
+.cover .credits{padding:16px 4cqw 0;margin:0 0 5.5cqw;font-size:2.9cqw;line-height:1.3;font-weight:500;gap:10px}
 .cover-photo{width:89.655%;max-width:none;aspect-ratio:650/864;margin:0 auto;border-radius:50%;background:#e8d3d1}
-.cover-photo .reference-photo{position:absolute;width:145.3846%;height:auto;max-width:none;left:-22.7692%;top:-8.6806%;object-fit:initial}
-.cover h1{font-family:'Pinyon Script',cursive;font-size:18.2cqw;line-height:1.08;font-weight:400;white-space:nowrap;margin:0 0 8.8cqw;letter-spacing:-.03em;color:#521514}
+.cover-photo .cover-portrait{display:block;width:100%;height:100%;object-fit:cover;object-position:center;position:static}
+.cover h1{transform:translateY(8px);font-family:'Pinyon Script',cursive;font-size:18.2cqw;line-height:1.08;font-weight:400;white-space:nowrap;margin:0 0 8.8cqw;letter-spacing:-.03em;color:#521514}
 .cover h2{font-size:4.55cqw;font-weight:700;margin:0 0 5.4cqw;line-height:1.4;color:#531514}
-.cover .name-divider{font-family:'Pinyon Script',cursive;font-size:4.4cqw;color:#8d615f;font-weight:400;margin:0 2.6cqw}
+.cover .name-divider{font-family:'Pinyon Script',cursive;font-size:calc(4.4cqw + 3pt);color:#8d615f;font-weight:400;margin:0 2.6cqw}
 .cover p{font-size:3.65cqw;line-height:1.8;color:#8d615f;letter-spacing:-.025em}
 .cover .cover-date{margin:0 0 1.4cqw}
 .cover .cover-venue{margin:0;line-height:1.9}
@@ -66,4 +69,4 @@ main{container-type:inline-size;overflow:hidden}
 .share-buttons #copy-invitation{background:#b996af;color:#fff;border:0}
 .share-buttons #copy-invitation::after{content:'⧉';float:right;font-size:18px}
 @media(max-width:340px){.account-row>div{flex-wrap:wrap}.account-number{text-align:left}.family .relationship{letter-spacing:0}}
-@supports not (font-size:1cqw){.cover{padding:12px 0 70px}.cover .credits{padding:0 6%;font-size:13px;margin-bottom:24px}.cover h1{font-size:clamp(54px,18vw,87px);margin-bottom:36px}.cover h2{font-size:19px;margin-bottom:24px}.cover .name-divider{font-size:18px;margin:0 10px}.cover p{font-size:14px}.family{padding:90px 16px 60px}.family p{font-size:14px;gap:6px}.family .relationship{font-size:10px}.family strong{font-size:15px}}
+@supports not (font-size:1cqw){.cover{padding:12px 0 70px}.cover .credits{padding:4px 4%;font-size:13px;margin-bottom:24px}.cover h1{font-size:clamp(54px,18vw,87px);margin-bottom:36px}.cover h2{font-size:19px;margin-bottom:24px}.cover .name-divider{font-size:calc(18px + 3pt);margin:0 10px}.cover p{font-size:14px}.family{padding:90px 16px 60px}.family p{font-size:14px;gap:6px}.family .relationship{font-size:10px}.family strong{font-size:15px}}
