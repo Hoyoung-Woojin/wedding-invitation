@@ -46,7 +46,32 @@ dialog[open]{animation:popup-fade-in .4s ease-out both}dialog[open]::backdrop{an
 
 .privacy{padding:0 5px;letter-spacing:-.3px;word-break:keep-all;overflow-wrap:normal;text-align:justify}
 
-</style></head><body><main><header><div class="credits"><span>Coded by Hoyoung</span><span>Designed by Woojin</span></div><h1>Wedding Day</h1><h2>유호영 &amp; 차우진</h2><p>2026년 12월 12일 오후 12시<br>그랜드 머큐어 임피리얼 팰리스 호텔<br>7층 셀레나홀</p></header><section><h2>RSVP</h2><p>오시는 분들의 자리를 미리 준비할 수 있도록<br>참석 여부와 인원을 알려주시면 감사하겠습니다.</p><small>✽ 식사와 함께 진행되는 동시예식으로,<br>참석 여부 확인을 꼭 부탁드립니다.</small><p><button class="primary" id="open">참석 여부 전달하기</button></p></section></main>
+
+/* 본문 1차: RSVP 모달 스타일은 기존 최종본 유지 */
+.cover{padding:22px 26px 56px;background:#e8d3d1}.cover .credits{font-size:17px;margin:0 0 22px;gap:12px}.cover-photo{width:100%;max-width:320px;aspect-ratio:3/4;margin:0 auto;overflow:hidden;border-radius:50%;background:#f3e9e7;position:relative}.cover-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}.photo-placeholder{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:#b18f8c;font-size:12px;letter-spacing:.03em;background:radial-gradient(ellipse at 40% 30%,#fff8f4,#eddbd7)}.photo-initials{font-family:'Cormorant',serif;font-style:italic;font-size:52px;font-weight:500;letter-spacing:0}.cover h1{position:relative;font-family:'Pinyon Script',cursive;font-size:clamp(48px,13vw,66px);font-weight:400;line-height:1.15;margin:-12px 0 24px;color:#521514}.cover h2{font-size:19px;font-weight:700;margin:0 0 18px}.name-divider{font-family:'Cormorant',serif;font-style:italic;font-weight:500;font-size:18px;margin:0 9px}.cover p{font-size:12px;line-height:1.9;color:#8d615f}.cover-date{margin:0 0 7px}.cover-venue{margin:0}.family{background:#f2e7e5;padding:46px 16px 24px}.family p{display:flex;align-items:baseline;justify-content:center;gap:6px;flex-wrap:wrap;font-size:12px;line-height:1.9;color:#531514;margin:9px 0}.family .relationship{font-size:10px;color:#8d615f}.family strong{font-size:13px;font-weight:700}.invitation{background:#f2e7e5;padding:32px 18px 60px}.invitation-star{display:block;color:#b996af;font-size:29px;margin-bottom:23px}.invitation p{font-size:14px;line-height:2.1;color:#313131;margin:0}.invitation .signature{font-size:12px;margin-top:25px}.rsvp-section{padding:48px 20px 52px}.rsvp-section h2{margin:0 0 22px}.rsvp-section p{font-size:13px;line-height:1.9}.rsvp-section small{font-size:11px}.rsvp-section button{width:min(100%,300px);margin-top:12px;font-size:13px}
+@media(max-width:500px){.cover{padding:20px 24px 48px}.cover .credits{font-size:15px}.cover-photo{max-width:300px}.cover h1{font-size:clamp(44px,13vw,62px)}.cover h2{font-size:18px}}
+</style></head><body><main>
+<header class="cover" aria-label="결혼식 안내">
+  <div class="credits"><span>Coded by Hoyoung</span><span>Designed by Woojin</span></div>
+  <div class="cover-photo" id="cover-photo" role="img" aria-label="웨딩 사진을 넣을 자리">
+    <div class="photo-placeholder"><span class="photo-initials" aria-hidden="true">H &amp; W</span><span>우리의 순간을 담을 자리</span></div>
+  </div>
+  <h1>Wedding Day</h1>
+  <h2>유호영 <span class="name-divider">&amp;</span> 차우진</h2>
+  <p class="cover-date">2026년 12월 12일 토요일 오후 12시</p>
+  <p class="cover-venue">그랜드 머큐어 임피리얼 팰리스 호텔<br>7층 셀레나홀</p>
+</header>
+<section class="family" aria-label="양가 혼주 정보">
+  <p><span class="parents">유구현·정진춘</span><span class="relationship">의 외동 아들</span><strong>유호영</strong></p>
+  <p><span class="parents">차도현·강순천</span><span class="relationship">의 둘째 딸</span><strong>차우진</strong></p>
+</section>
+<section class="invitation" aria-label="모시는 글">
+  <span class="invitation-star" aria-hidden="true">✽</span>
+  <p>호영과 우진,<br>두 사람이 사랑으로 하나 되어<br>새로운 시작을 맞이합니다.<br>그 시작의 첫 걸음,<br>함께 축복해 주시면 감사하겠습니다.</p>
+  <p class="signature">신랑 유호영 · 신부 차우진</p>
+</section>
+<section class="rsvp-section" aria-labelledby="rsvp-heading"><h2 id="rsvp-heading">RSVP</h2><p>오시는 분들의 자리를 미리 준비할 수 있도록<br>참석 여부와 인원을 알려주시면 감사하겠습니다.</p><small>✽ 식사와 함께 진행되는 동시예식으로,<br>참석 여부 확인을 꼭 부탁드립니다.</small><p><button class="primary" id="open">참석 여부 전달하기</button></p></section>
+</main>
 
 <dialog id="welcome" aria-labelledby="welcome-title"><h2 id="welcome-title">참석 의사 체크</h2><p class="welcome-note">* 식사와 함께 진행되는 동시예식으로,<br>참석 여부 확인을 꼭 부탁드립니다.</p><div class="wedding-card"><p class="couple">신랑 유호영 <span aria-hidden="true">♥</span> 신부 차우진</p><hr><p>2026년 12월 12일<br>토요일 오후 12시</p><p>그랜드 머큐어 임피리얼 팰리스 호텔<br>7층 셀레나홀</p><button type="button" class="primary" id="welcome-next">참석 의사 체크하기</button></div><button type="button" id="welcome-close">닫기</button></dialog>
 
