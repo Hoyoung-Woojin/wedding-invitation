@@ -176,3 +176,6 @@ img{-webkit-user-drag:none}
 
 /* 마지막 이미지: 현재 위치에서 위로 10px 이동 */
 .ending-section img{transform:translateY(-10px)}
+
+/* 마지막 이미지: 직전 위치에서 위로 10px 추가 이동 */
+.ending-section img{transform:translateY(-20px)}
