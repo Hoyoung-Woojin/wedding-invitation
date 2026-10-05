@@ -128,3 +128,10 @@ body{font-size:calc(16px + 2pt)}
 #account-status{font-size:12px!important}
 #location-status,#share-status{font-size:11px!important}
 #gallery-more .gallery-chevron{display:block;width:8px;height:8px;flex:0 0 8px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:translateY(-2px) rotate(45deg);line-height:normal}
+
+/* 버스 두 항목: 문단 사이 여백을 제거하고 본문 한 줄 간격에 맞춤 */
+.transport-block:nth-child(2) p{margin:0;line-height:1.95}
+/* 계좌 화살표: 더보기와 같은 8px 도형, 방향별 시각 중심 보정 */
+.account-group summary{position:relative;padding-right:46px}
+.account-group summary::after{content:'';position:absolute;right:18px;top:50%;display:block;width:8px;height:8px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;color:#aaa;line-height:normal;transform:translateY(-6px) rotate(45deg)}
+.account-group[open] summary::after{content:'';transform:translateY(-2px) rotate(225deg)}
