@@ -162,3 +162,10 @@ body{font-size:calc(16px + 2pt)}
 /* 이미지의 일반적인 저장·선택 동작 제한 */
 img,.cover-photo,.gallery-thumb,#photo-stage{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 img{-webkit-user-drag:none}
+
+/* 직전 위치 기준: 사진 위로 5px 추가, 날짜·장소 위로 3px */
+.cover-photo{transform:translateY(-10px)}
+.cover .cover-date,.cover .cover-venue{transform:translateY(-3px)}
+/* 모바일: 실제 이미지가 길게 누르기의 대상이 되지 않도록 컨테이너로 입력 전달 */
+.cover-photo img,.gallery-thumb img,#photo-stage img{pointer-events:none;-webkit-touch-callout:none}
+.cover-photo,.gallery-thumb,#photo-stage,#photo-stage *{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}

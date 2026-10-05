@@ -5,7 +5,7 @@
  document.addEventListener('dragstart',event=>{if(isImageArea(event.target))event.preventDefault()},true);
  const protect=root=>{
   if(root instanceof HTMLImageElement)root.draggable=false;
-  if(root.querySelectorAll)root.querySelectorAll('img').forEach(img=>{img.draggable=false});
+  if(root.querySelectorAll)root.querySelectorAll('img').forEach(img=>{img.draggable=false;img.style.pointerEvents='none'});
  };
  protect(document);
  new MutationObserver(records=>records.forEach(record=>record.addedNodes.forEach(protect))).observe(document.body,{childList:true,subtree:true});
