@@ -122,3 +122,9 @@ body{font-size:calc(16px + 2pt)}
 .account-group summary::after{display:block;line-height:1;transform:translateY(1px);align-self:center}
 .transport-block h3{color:#cda0b4}
 .bus-bullet{color:#cda0b4}
+
+/* 계좌 이름만 굵게, 복사 결과 안내 크기 복원 */
+.account-name{font-weight:800}
+#account-status{font-size:12px!important}
+#location-status,#share-status{font-size:11px!important}
+#gallery-more .gallery-chevron{display:block;width:8px;height:8px;flex:0 0 8px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:translateY(-2px) rotate(45deg);line-height:normal}
