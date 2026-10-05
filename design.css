@@ -89,3 +89,36 @@ body{font-size:calc(16px + 2pt)}
 .transport-icon{transform:translateY(-2px)}
 .transport-block h3{color:#531514;font-weight:800}
 .share-button-label{display:block;position:relative;top:1px}
+
+/* 6차 미세 조정: 직전 위치에서 아이콘 -1px, 공유하기 문구 +1px */
+.transport-icon{transform:translateY(-3px)}
+#share-invitation .share-button-label{top:2px}
+
+/* RSVP 팝업만 확대 전 크기로 복원 */
+#welcome,#modal{font-size:16px}
+#modal h2{font-size:19px}
+#modal>.intro{font-size:12px}
+#modal label,#modal legend{font-size:12px}
+#modal .options label{font-size:13px}
+#modal input,#modal textarea{font-size:14px}
+#form input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),#form textarea,#form select{font-size:16px}
+#modal .counter span{font-size:13px}
+#modal .counter button{font-size:22px}
+#modal .counter output{font-size:17px}
+#modal #total{font-size:12px}
+#modal .privacy{font-size:calc(10px - 1pt)}
+#modal .consent{font-size:11px}
+#modal .actions button{font-size:13px}
+#modal #status{font-size:14px}
+#modal #phone::placeholder{font-size:13px}
+#welcome h2{font-size:21px}
+#welcome .welcome-note{font-size:13px}
+#welcome .wedding-card,#welcome .wedding-card .couple{font-size:14px}
+#welcome .wedding-card .primary,#welcome-close{font-size:14px}
+/* 계좌 안내 문구만 1pt 축소 */
+.account-intro{font-size:calc(12px + 1pt)!important}
+#gallery-more{display:flex;align-items:center;justify-content:center;gap:7px;line-height:1.4}
+#gallery-more span{display:block;line-height:1;transform:translateY(1px)}
+.account-group summary::after{display:block;line-height:1;transform:translateY(1px);align-self:center}
+.transport-block h3{color:#cda0b4}
+.bus-bullet{color:#cda0b4}
