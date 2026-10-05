@@ -1,5 +1,5 @@
-/* 한글: 네이버 마루부리. 영문 장식 제목은 각 영역 지정 글꼴 사용. */
-body{font-family:'MaruBuri',serif}
+/* 한글: 나눔명조. 영문 장식 제목은 각 영역 지정 글꼴 사용. */
+body{font-family:'Nanum Myeongjo',serif}
 button,input,select,textarea{font-family:inherit}
 /* 기획안 1차 디자인. 커버 값은 480px 카드 기준이며 카드 폭에 비례합니다. */
 main{container-type:inline-size;overflow:hidden}
@@ -70,3 +70,6 @@ main{container-type:inline-size;overflow:hidden}
 .share-buttons #copy-invitation::after{content:'⧉';float:right;font-size:18px}
 @media(max-width:340px){.account-row>div{flex-wrap:wrap}.account-number{text-align:left}.family .relationship{letter-spacing:0}}
 @supports not (font-size:1cqw){.cover{padding:12px 0 70px}.cover .credits{padding:4px 4%;font-size:13px;margin-bottom:24px}.cover h1{font-size:clamp(54px,18vw,87px);margin-bottom:36px}.cover h2{font-size:19px;margin-bottom:24px}.cover .name-divider{font-size:calc(18px + 3pt);margin:0 10px}.cover p{font-size:14px}.family{padding:90px 16px 60px}.family p{font-size:14px;gap:6px}.family .relationship{font-size:10px}.family strong{font-size:15px}}
+
+.transport-block h3{display:flex;align-items:center;gap:9px}.transport-icon{width:20px;height:20px;flex:none}
+#share-help{max-width:360px;text-align:center}#share-help h2{font-family:'Nanum Myeongjo',serif;font-size:19px}#share-help p{font-size:13px;line-height:1.9;color:#777;word-break:keep-all}.share-help-actions{display:grid;gap:10px}.share-help-actions a{display:block;padding:13px;border:1px solid #b996af;border-radius:5px;color:#8d615f;font-size:13px;text-decoration:none}.share-help-actions button{font-size:13px}
