@@ -151,3 +151,6 @@ body{font-size:calc(16px + 2pt)}
 
 /* Wedding Day: 기존 아래 8px 유지, 왼쪽 3px 이동 */
 .cover h1{transform:translate(-3px,8px)}
+
+/* Wedding Day: 직전 위치에서 왼쪽으로 2px 추가 이동 */
+.cover h1{transform:translate(-5px,8px)}
