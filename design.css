@@ -173,3 +173,6 @@ img{-webkit-user-drag:none}
 /* 청첩장 마지막 이미지 */
 .ending-section{background:#fff;padding:0 24px 36px;text-align:center}
 .ending-section img{display:block;width:100%;max-width:320px;height:auto;margin:0 auto;pointer-events:none;-webkit-touch-callout:none}
+
+/* 마지막 이미지: 현재 위치에서 위로 10px 이동 */
+.ending-section img{transform:translateY(-10px)}
