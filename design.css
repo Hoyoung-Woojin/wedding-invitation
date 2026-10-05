@@ -154,3 +154,11 @@ body{font-size:calc(16px + 2pt)}
 
 /* Wedding Day: 직전 위치에서 왼쪽으로 2px 추가 이동 */
 .cover h1{transform:translate(-5px,8px)}
+
+/* 커버: 현재 위치를 기준으로 위로 미세 이동 */
+.cover-photo{transform:translateY(-5px)}
+.cover h1{transform:translate(-5px,5px)}
+.cover h2{transform:translateY(-3px)}
+/* 이미지의 일반적인 저장·선택 동작 제한 */
+img,.cover-photo,.gallery-thumb,#photo-stage{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+img{-webkit-user-drag:none}
