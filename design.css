@@ -142,3 +142,9 @@ body{font-size:calc(16px + 2pt)}
 
 /* 교통편 아이콘 직전 위치에서 1px 아래로 이동 */
 .transport-icon{transform:translateY(-1px)}
+
+/* 지하철 노선 배지와 안내 문구를 같은 행의 중앙에 맞춤 */
+.transport-block .subway-row{display:flex;align-items:center;gap:7px}
+.subway-lines{display:flex;align-items:center;gap:4px;flex:none}
+.subway-lines .line-badge{display:block;margin:0;white-space:nowrap}
+.subway-description{display:block;min-width:0;line-height:1.95;position:relative;top:1px}
