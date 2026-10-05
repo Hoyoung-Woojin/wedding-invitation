@@ -84,3 +84,8 @@ body{font-size:calc(16px + 2pt)}
 .share-buttons button{display:flex;align-items:center;justify-content:flex-start;gap:12px;line-height:1.4}
 .share-buttons #share-invitation::after,.share-buttons #copy-invitation::after{float:none;margin-left:auto;flex:none;line-height:1}
 @supports not (width:1cqw){.cover h1{font-size:clamp(54px,18vw,87px)}}
+
+/* 글꼴의 시각적 중심을 기준으로 미세 정렬 */
+.transport-icon{transform:translateY(-2px)}
+.transport-block h3{color:#531514;font-weight:800}
+.share-button-label{display:block;position:relative;top:1px}
