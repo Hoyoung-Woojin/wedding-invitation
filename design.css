@@ -169,3 +169,7 @@ img{-webkit-user-drag:none}
 /* 모바일: 실제 이미지가 길게 누르기의 대상이 되지 않도록 컨테이너로 입력 전달 */
 .cover-photo img,.gallery-thumb img,#photo-stage img{pointer-events:none;-webkit-touch-callout:none}
 .cover-photo,.gallery-thumb,#photo-stage,#photo-stage *{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+
+/* 청첩장 마지막 이미지 */
+.ending-section{background:#fff;padding:0 24px 36px;text-align:center}
+.ending-section img{display:block;width:100%;max-width:320px;height:auto;margin:0 auto;pointer-events:none;-webkit-touch-callout:none}
