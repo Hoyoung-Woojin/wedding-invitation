@@ -135,3 +135,7 @@ body{font-size:calc(16px + 2pt)}
 .account-group summary{position:relative;padding-right:46px}
 .account-group summary::after{content:'';position:absolute;right:18px;top:50%;display:block;width:8px;height:8px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;color:#aaa;line-height:normal;transform:translateY(-6px) rotate(45deg)}
 .account-group[open] summary::after{content:'';transform:translateY(-2px) rotate(225deg)}
+
+/* 교통편 아이콘 직전 위치에서 1px 아래 / 주차 뒤 마지막 구분선 제거 */
+.transport-icon{transform:translateY(-2px)}
+.transport-block:last-child{border-bottom:0}
