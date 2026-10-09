@@ -24,7 +24,7 @@
     const el = document.createElement('p');
     el.className = 'rsvp-deadline';
     el.setAttribute('aria-live','polite');
-    el.innerHTML = '<span>참석 여부 전달 마감일</span><time datetime="2026-12-01">2026년 12월 1일 (화)</time><strong></strong>';
+    el.innerHTML = '<span>참석 여부 전달 마감일&nbsp;&nbsp;</span><time datetime="2026-12-01">2026년 12월 1일 (화)</time><span aria-hidden="true">·</span><strong></strong>';
     parent.insertBefore(el,before || null);
     notices.push(el);
   }
