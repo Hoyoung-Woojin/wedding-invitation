@@ -179,6 +179,3 @@ img{-webkit-user-drag:none}
 
 /* 마지막 이미지: 직전 위치에서 위로 10px 추가 이동 */
 .ending-section img{transform:translateY(-20px)}
-
-/* RSVP 팝업 버튼: 참석 인원(본인 포함)과 동일한 글꼴·글자색 */
-#welcome button,#modal button,#modal .options label,#modal .options label:has(input:checked){font-family:'Nanum Myeongjo',serif;font-weight:400;font-style:normal;color:#313131}
