@@ -7,13 +7,13 @@
   const isClosed = () => serverClosed || Date.now() >= closesAt;
   const style = document.createElement('style');
   style.textContent = `
-.rsvp-deadline{display:flex;justify-content:center;align-items:baseline;flex-wrap:wrap;gap:3px 5px;margin:12px 0 0!important;font-family:inherit;font-size:11px!important;line-height:1.7!important;color:#777!important;word-break:keep-all;letter-spacing:-.35px}
-.rsvp-deadline strong,.rsvp-deadline time{color:#98556e;font-weight:700}.rsvp-deadline strong{font-size:12px}
+.rsvp-deadline{display:flex;justify-content:center;align-items:baseline;flex-wrap:wrap;gap:3px 5px;margin:12px 0 0!important;font-family:inherit;font-size:calc(11px + 2pt)!important;line-height:1.7!important;color:#777!important;word-break:keep-all;letter-spacing:-.35px}
+.rsvp-deadline strong,.rsvp-deadline time{color:#98556e;font-weight:700}.rsvp-deadline strong{font-size:calc(12px + 2pt)}
 .rsvp-closed-card{border:1px solid #e6e1e3;border-radius:6px;padding:28px 14px;margin:22px auto 0;max-width:340px;background:#fff;text-align:center;color:#555}
 .rsvp-closed-icon{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:2px solid #b996af;border-radius:50%;margin:0 auto 18px;color:#b996af;font:24px/1 Georgia,serif}
-.rsvp-closed-card strong{font-size:14px;line-height:1.8}.rsvp-closed-card p{font-size:12px!important;line-height:1.8;color:#999!important;margin:10px 0 0}
+.rsvp-closed-card strong{font-size:calc(14px + 2pt);line-height:1.8}.rsvp-closed-card p{font-size:calc(12px + 2pt)!important;line-height:1.8;color:#999!important;margin:10px 0 0}
 .rsvp-expired .rsvp-section>p:has(#open),#welcome.rsvp-expired .wedding-card,#modal.rsvp-expired #form{display:none!important}
-#welcome .rsvp-deadline,#modal .rsvp-deadline{font-size:10px!important}#modal .deadline-close{display:block;margin:18px auto 0;border:0;background:transparent;color:#999;font-size:13px}
+#welcome .rsvp-deadline,#modal .rsvp-deadline{font-size:calc(10px + 2pt)!important}#modal .deadline-close{display:block;margin:18px auto 0;border:0;background:transparent;color:#999;font-size:13px}
 `;
   document.head.append(style);
   const main = document.querySelector('.rsvp-section');
