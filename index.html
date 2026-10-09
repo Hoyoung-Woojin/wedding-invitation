@@ -100,7 +100,7 @@ dialog[open]{animation:popup-fade-in .4s ease-out both}dialog[open]::backdrop{an
 
 <div id="companions" hidden><label id="count-label">참석 인원을 알려주세요.</label><div class="counter" role="group" aria-labelledby="count-label"><span>참석 인원 (본인 포함)</span><div class="counter-controls"><button type="button" id="minus" aria-label="참석 인원 한 명 줄이기">−</button><output id="count-display" aria-live="polite">1</output><button type="button" id="plus" aria-label="참석 인원 한 명 늘리기">+</button></div></div><input id="count" name="companion_count" type="hidden" value="0"></div><p id="total" aria-live="polite">참석 여부를 선택해 주세요.</p>
 
-<label for="phone">동명이인 구분을 위해 번호를 알려주세요. *</label><input id="phone" name="phone_last4" required inputmode="numeric" pattern="[0-9]{4}" minlength="4" maxlength="4" placeholder="휴대폰 번호 뒤 4자리" autocomplete="off">
+<label for="phone">동명이인 구분을 위해 휴대폰 번호 뒤 4자리를 알려주세요. *</label><input id="phone" name="phone_last4" required inputmode="numeric" pattern="[0-9]{4}" minlength="4" maxlength="4" placeholder="휴대폰 번호 뒤 4자리" autocomplete="off">
 
 <label for="message">전달사항 (선택)</label><textarea id="message" name="message" maxlength="500" rows="2"></textarea>
 
