@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   // 2026년 12월 1일 하루 전체를 포함, 한국 시간 12월 2일 0시 마감.
-  const closesAt = Date.parse('2026-10-08T00:00:00+09:00');
+  const closesAt = Date.parse('2026-12-02T00:00:00+09:00');
   const day = 86400000;
   let serverClosed = false;
   const isClosed = () => serverClosed || Date.now() >= closesAt;
@@ -9,7 +9,7 @@
   style.textContent = `
 .rsvp-deadline{display:flex;justify-content:center;align-items:baseline;flex-wrap:wrap;gap:3px 5px;margin:12px 0 0!important;font-family:inherit;font-size:calc(11px + 2pt)!important;line-height:1.7!important;color:#777!important;word-break:keep-all;letter-spacing:-.35px}
 .rsvp-deadline strong,.rsvp-deadline time{color:#98556e;font-weight:700}.rsvp-deadline strong{font-size:calc(12px + 2pt)}
-.rsvp-closed-card{border:1px solid #e6e1e3;border-radius:6px;padding:28px 14px;margin:22px auto 0;max-width:340px;background:#fff;text-align:center;color:#555}
+.rsvp-closed-card{border:0;border-radius:6px;padding:28px 14px;margin:22px auto 0;max-width:340px;background:#e7dce8;text-align:center;color:#555}
 .rsvp-closed-icon{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:2px solid #b996af;border-radius:50%;margin:0 auto 18px;color:#b996af;font:24px/1 Georgia,serif}
 .rsvp-closed-card strong{font-size:calc(14px + 2pt);line-height:1.8}.rsvp-closed-card p{font-size:calc(12px + 2pt)!important;line-height:1.8;color:#999!important;margin:10px 0 0}
 .rsvp-expired .rsvp-section>p:has(#open),#welcome.rsvp-expired .wedding-card,#modal.rsvp-expired #form{display:none!important}
