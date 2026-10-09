@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   // 2026년 12월 1일 하루 전체를 포함, 한국 시간 12월 2일 0시 마감.
-  const closesAt = Date.parse('2026-10-08T00:00:00+09:00');
+  const closesAt = Date.parse('2026-12-02T00:00:00+09:00');
   const day = 86400000;
   let serverClosed = false;
   const isClosed = () => serverClosed || Date.now() >= closesAt;
