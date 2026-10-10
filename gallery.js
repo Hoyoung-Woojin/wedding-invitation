@@ -1,7 +1,7 @@
 // 사진 순서는 아래 목록 순서입니다. 추가/삭제/순서 변경은 이 목록만 수정하세요.
 // 같은 파일명으로 images 폴더의 사진을 교체하면 코드 수정 없이 바뀝니다.
 const GALLERY_FILES = [
- '01.JPG', '02.JPG', '03.JPG', '04.JPG', '05.JPG', '06.JPG', '07.JPG', '08.JPG', '09.JPG', '10.JPG', '11.JPG', '12.JPG', '13.JPG', '14.JPG', '15.JPG', '16.JPG', '17.JPG', '18.JPG'
+ '01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg', '09.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg'
 ];
 const GALLERY_PHOTOS = GALLERY_FILES.map((file,i)=>({src:'images/'+file,alt:`호영과 우진의 웨딩 사진 ${i+1}`}));
 const grid=document.querySelector('#gallery-grid'),more=document.querySelector('#gallery-more'),photoModal=document.querySelector('#photo-modal'),stage=document.querySelector('#photo-stage');
