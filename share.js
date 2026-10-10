@@ -1,4 +1,4 @@
-const INVITATION_SHARE={title:'유호영 ♥ 차우진 결혼합니다',text:'2026년 12월 12일 토요일 오후 12시\n저희의 소중한 날에 함께해 주세요',url:'https://hoyoung-woojin.github.io/wedding-invitation/'};
+const INVITATION_SHARE={title:'유호영 ♥ 차우진 결혼합니다',text:'2026년 12월 12일 토요일 오후 12시 · 저희의 소중한 날에 함께해 주세요',url:'https://hoyoung-woojin.github.io/wedding-invitation/'};
 const shareStatus=document.querySelector('#share-status'),shareManual=document.querySelector('#share-manual'),shareText=document.querySelector('#share-copy-text'),shareHelp=document.querySelector('#share-help'),shareButton=document.querySelector('#share-invitation');
 let sharing=false;
 async function copyInvitation(){shareManual.hidden=true;try{if(!navigator.clipboard?.writeText)throw Error();await navigator.clipboard.writeText(INVITATION_SHARE.url);shareStatus.textContent='청첩장 링크를 복사했습니다.'}catch{shareText.value=INVITATION_SHARE.url;shareManual.hidden=false;shareText.focus();shareText.select();shareStatus.textContent='아래 주소를 직접 복사해 주세요.'}}
