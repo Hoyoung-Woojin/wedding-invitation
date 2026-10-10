@@ -30,7 +30,22 @@
   }
   notice(main);
   notice(welcome,document.querySelector('#welcome-close'));
-  notice(modal,document.querySelector('#form'));
+  // 입력 모달에는 마감일 안내를 표시하지 않습니다.
+  const couple = welcome.querySelector('.couple');
+  if (couple) {
+    for (const node of Array.from(couple.childNodes)) {
+      if (node.nodeType !== Node.TEXT_NODE) continue;
+      const parts = node.textContent.split(/(유호영|차우진)/);
+      const fragment = document.createDocumentFragment();
+      parts.forEach(part => {
+        if (part === '유호영' || part === '차우진') {
+          const name = document.createElement('strong');
+          name.textContent = part; name.style.fontWeight = '700'; fragment.append(name);
+        } else fragment.append(document.createTextNode(part));
+      });
+      node.replaceWith(fragment);
+    }
+  }
   [main,welcome,modal].forEach(parent => {
     const card = document.createElement('div');
     card.className = 'rsvp-closed-card'; card.hidden = true;
