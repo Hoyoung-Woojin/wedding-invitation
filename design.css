@@ -179,3 +179,10 @@ img{-webkit-user-drag:none}
 
 /* 마지막 이미지: 직전 위치에서 위로 10px 추가 이동 */
 .ending-section img{transform:translateY(-20px)}
+
+/* 사진 확대 화면: 화살표 2pt 축소 및 도형 중심 정렬 */
+#photo-modal .photo-navigation button{display:flex;align-items:center;justify-content:center;padding:0;width:54px;height:44px;min-height:44px;font-size:30px;line-height:1}
+#photo-modal .photo-navigation button{font-size:0}
+#photo-modal .photo-navigation button::before{content:"";display:block;width:16px;height:16px;border-top:1px solid currentColor;border-right:1px solid currentColor;flex:none}
+#photo-prev::before{transform:translateX(4px) rotate(-135deg)}
+#photo-next::before{transform:translateX(-4px) rotate(45deg)}
