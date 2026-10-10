@@ -10,8 +10,9 @@ document.querySelector('#copy-invitation').onclick=copyInvitation;
 shareButton.onclick=async()=>{
  if(sharing)return;shareManual.hidden=true;shareStatus.textContent='';
  if(typeof navigator.share!=='function'){showShareHelp(false);return}
- let payload=INVITATION_SHARE;
- if(typeof navigator.canShare==='function'&&!navigator.canShare(payload))payload={url:INVITATION_SHARE.url};
+ // 링크만 전달: 설명은 페이지의 OG 미리보기 안에 표시됩니다.
+ let payload={url:'https://hoyoung-woojin.github.io/wedding-invitation/share.html'};
+ if(typeof navigator.canShare==='function'&&!navigator.canShare(payload))payload={url:'https://hoyoung-woojin.github.io/wedding-invitation/share.html'};
  sharing=true;shareButton.disabled=true;
  try{await navigator.share(payload)}catch(e){if(e.name!=='AbortError')showShareHelp(true)}finally{sharing=false;shareButton.disabled=false}
 };
